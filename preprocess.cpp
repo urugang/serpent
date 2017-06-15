@@ -178,7 +178,7 @@ std::string inferType(Node node) {
             }
         }
         else if (node.args.size() == 1) {
-            cur = "int256";
+            cur = "void";
         }
         else if (node.args[1].val == "=") {
             if (node.args[1].args[0].val == "items")
